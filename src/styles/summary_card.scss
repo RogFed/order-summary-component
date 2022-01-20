@@ -1,0 +1,120 @@
+.SummaryCard {
+  width: 100%;
+  max-width: calc(375px - 40px);
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+
+  @media screen and (min-width: 476px) {
+    max-width: calc(475px - 40px);
+  }
+
+  &__header {
+    width: 100%;
+    min-height: 164px;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 476px) {
+      background-size: cover;
+      min-height: 220px;
+    }
+  }
+
+  &__content {
+    padding: 3rem 2rem;
+    text-align: center;
+
+    @media screen and (min-width: 476px) {
+      padding: 3rem 4rem;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+    margin: 0 auto 20px auto;
+    max-width: 90%;
+  }
+
+  &__plan {
+    padding: 20px 15px;
+    background: var(--very-pale-blue);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__info {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 20px;
+    }
+
+    &__cost {
+      &__name {
+        font-weight: 900;
+      }
+
+      &__value {
+        color: var(--desaturated-blue);
+      }
+    }
+
+    &__change {
+      font-weight: 700;
+      color: var(--bright-blue);
+      transition: .3s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--desaturated-blue);
+      }
+    }
+
+    &__button {
+      display: block;
+      width: 100%;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      cursor: pointer;
+
+      &--proceed {
+        background: var(--bright-blue);
+        color: #fff;
+        box-shadow: 0 20px 15px 0 var(--pale-blue);
+        transition: .3s ease;
+
+        &:hover {
+          background: var(--desaturated-blue);
+        }
+      }
+
+      &--cancel {
+        color: var(--desaturated-blue);
+        margin-bottom: 0;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}

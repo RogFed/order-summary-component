@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
+
+import SummaryCard from './SummaryCard'
 
 const App = () => (
   <>
-    <h1>ReactJS App</h1>
+    <SummaryCard />
   </>
 );
 
